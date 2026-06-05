@@ -29,7 +29,7 @@ int main(){
             cout << "Masukkan Huruf (? untuk hint) : ";
             cin >> input;
 
-            // ===== HINT =====
+            // HINT
             if(input == "?"){
                 if(game.nyawa > 1){
                     game.statusTebakan[0] = game.kataAsli[0];
