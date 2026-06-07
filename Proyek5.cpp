@@ -140,7 +140,6 @@ int main() {
         cout << "\n==================================" << endl;
         cout << "Tebak negara : " << soal << endl;
         cout << "Negara apa yang dimaksud? ";
-        cout << "Negara apa yang dimaksud : ";
         cin.ignore();
         getline(cin, tebakan);
 
