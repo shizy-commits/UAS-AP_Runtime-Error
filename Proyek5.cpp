@@ -7,25 +7,25 @@
 
 using namespace std;
 
-// Fungsi untuk mengacak tampilan negara
 string buatSoal(string negara) {
     string soal = negara;
 
-    int panjang = negara.length();
+    int panjang = negara.length(); 
 
-    // Minimal 2 huruf disembunyikan
+
     int jumlahHilang = max(2, panjang / 2);
 
     vector<int> indeks;
 
     for (int i = 0; i < panjang; i++) {
-        indeks.push_back(i);
+        indeks.push_back(i); 
     }
 
-    random_shuffle(indeks.begin(), indeks.end());
+    random_shuffle(indeks.begin(), indeks.end()); 
 
     for (int i = 0; i < jumlahHilang; i++) {
-        soal[indeks[i]] = '_';
+        soal[indeks[i]] = '_'; 
+     
     }
 
     return soal;
@@ -143,9 +143,10 @@ int main() {
         cin.ignore();
         getline(cin, tebakan);
 
-        // ubah ke huruf kecil
+
         transform(tebakan.begin(), tebakan.end(),
                   tebakan.begin(), ::tolower);
+                 
 
         if (tebakan == jawabanBenar) {
             skor++;

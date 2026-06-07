@@ -29,7 +29,6 @@ int main(){
             cout << "Masukkan Huruf (? untuk hint) : ";
             cin >> input;
 
-            // HINT
             if(input == "?"){
                 if(game.nyawa > 1){
                     game.statusTebakan[0] = game.kataAsli[0];
@@ -131,7 +130,6 @@ int main(){
                  << game.kataAsli << endl;
         }
 
-        // SORT LEADERBOARD
         for(int i = 0; i < jumlahPemain - 1; i++){
             for(int j = i + 1; j < jumlahPemain; j++)
             {
@@ -144,7 +142,6 @@ int main(){
             }
         }
 
-        // TAMPILKAN LEADERBOARD 
         cout << "\n===== TOP 5 LEADERBOARD =====\n";
 
         for(int i = 0; i < jumlahPemain; i++){
